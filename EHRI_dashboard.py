@@ -72,6 +72,7 @@ if (section == 'EHRI repositories'):
         repdata = pd.read_csv('https://portal.ehri-project.eu/api/datasets/a3KwGAKDYf?format=csv', names = ['repository_code', 'repository_name', 'lat', 'lon', 'records_top', 'records_low', 'records_total'])
         pd.to_numeric(repdata.lon)
         pd.to_numeric(repdata.lat)
+        pd.to_numeric(repdata.records_total)
         return repdata
     
     repdata = load_repdata()
