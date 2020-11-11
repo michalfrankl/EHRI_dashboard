@@ -132,4 +132,4 @@ if (section == 'EHRI repositories'):
     if st.sidebar.checkbox("Show data", 0):
         st.write(repdata[(repdata.records_total >= c[0]) & (repdata.records_total <= c[1])])
     
-st.sidebar.image('/home/michal/michal.frankl@gmail.com/zm/projects/EHRI-2/EHRI-logo-kleur-beeldscherm-klein.jpg')
+st.sidebar.image('EHRI-logo-kleur-beeldscherm-klein.jpg')
